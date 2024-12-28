@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Financial Tracker</title>
+    <script defer src="./javaScript/index.js"></script>
+</head>
+<body>
+    <div class="body__wrapper">
+        <header class="header">
+            <a href="/index.html" class="header__logo">Financial Tracker</a>
+            <div class="header__menu">
+                <nav class="header__navigation">
+                    <ul class="header__nav">
+                        <li><a href="/" class="accounts">accounts</a></li>
+                        <li><a href="/" class="operations">operations</a></li>
+                        <li><a href="/" class="analytics">analytics</a></li>
+                    </ul>
+                </nav>
+                <a href="/" class="header__user-account">
+                    Name <img 
+                            src="./assets/Mr_Fox.jpg" 
+                            alt="user-image" 
+                            class="user-account__image"
+                            width="42"/>
+                </a>
+            </div>
+            <button 
+                class="header__burger-btn"
+                id="burger-btn"
+                type="button"
+                aria-label="Open navigation menu"
+                title="Open navigation menu"
+            >
+                <span class="burger-btn__line"></span>
+                <span class="burger-btn__line"></span>
+                <span class="burger-btn__line"></span>
+            </button>
+        </header>
+        <main class="main">
+            <div class="total-balance-container">
+                <h3 class="total-balance">Total Balance</h3>
+                <p class="money-amount">0,00 ₽</p>
+            </div>
+            <div class="accounts-container">
+                <div class="account">
+                    <h3>account1</h3>
+                    <p class="account-total-money">
+                        0,00 ₽
+                    </p>
+                </div>
+                <div class="account">
+                    <h3>account2</h3>
+                    <p class="account-total-money">
+                        0,00 ₽
+                    </p>
+                </div>
+            </div>
+            <div class="saving-container">
+                <h3>Saving</h3>
+                <p class="saving-amount">
+                    0,00 ₽
+                </p>
+            </div>
+            <div class="debts-container">
+                <h3 class="debts">Debts</h3>
+                <p class="total-debts">
+                    0,00 ₽
+                </p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
